@@ -4,22 +4,25 @@
     font-size: 53%;
   }
   .container {
-    max-width: 1450px;
+    max-width: 98%;
   }
+  // .container {
+  //   max-width: 1450px;
+  // }
 }
 
 @media (max-width: 1440px) {
   html {
     font-size: 47%;
   }
-  .container {
-    max-width: 1340px;
-  }
+  // .container {
+  //   max-width: 1340px;
+  // }
 }
 @media (max-width: 1366px) {
-  .container {
-    max-width: 1140px;
-  }
+  // .container {
+  //   max-width: 1140px;
+  // }
   .parent_service {
     align-items: unset;
   }

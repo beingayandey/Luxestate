@@ -631,6 +631,10 @@ video {
   padding: 1rem 4rem;
 }
 
+.h_works {
+  overflow: hidden;
+}
+
 .h_works_head {
   width: 27%;
 }
@@ -769,6 +773,7 @@ video {
 
 .agent {
   background-color: #f6f5f4;
+  overflow: hidden;
 }
 
 .agent_head {
@@ -1018,4 +1023,8 @@ footer .mid_footer .right_mfooter .f_row ul li a {
 }
 footer .mid_footer .right_mfooter .f_row ul li a:hover {
   color: #ffcc01;
+}
+
+section {
+  overflow: hidden;
 }/*# sourceMappingURL=custom.css.map */
