@@ -1,0 +1,56 @@
+.agent {
+  background-color: #f6f5f4;
+}
+.agent_head {
+  width: 27%;
+}
+.parent_agent {
+  @include flex;
+  justify-content: space-between;
+  .agent_box {
+    width: 32%;
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    width: 32%;
+    margin-top: 3rem;
+    overflow: hidden;
+    &:hover .agent_img {
+      transform: scale(1.2);
+    }
+    .agent_img {
+      width: 100%;
+    }
+    .agent_box_cntnt {
+      padding: 2rem;
+      h6 {
+        color: #1f373d;
+        font-size: 15px;
+        padding-bottom: 2rem;
+      }
+      .agent_box_details {
+        @include flex;
+        justify-content: space-between;
+        .agent_box_rent {
+          h5 {
+            color: #ffcc01;
+            font-size: 18px;
+          }
+        }
+        .agent_box_fter {
+          @include flex;
+          justify-content: space-between;
+          width: 33%;
+          span {
+            a {
+              color: $primary;
+              font-size: 19px;
+              &:hover i {
+                transform: scale(2);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,30 @@
+.service_head {
+  width: 27%;
+}
+.parent_service {
+  @include flex;
+  margin-top: 5rem;
+  align-items: start;
+  gap: 10rem;
+  .left_service {
+    width: 52%;
+    height: auto;
+    img {
+      width: 100%;
+      display: block;
+      height: 100%;
+    }
+  }
+  .right_service {
+    width: 42%;
+    .service-desc {
+      margin-bottom: 6rem;
+      p {
+        width: 70%;
+      }
+    }
+    .service-desc:last-child {
+      margin-bottom: 0;
+    }
+  }
+}

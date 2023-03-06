@@ -1,0 +1,107 @@
+.h_works_head {
+  width: 27%;
+  .cmn_hdr {
+    p {
+      line-height: 2.5;
+    }
+  }
+}
+.parent-h_works {
+  @include flex;
+  justify-content: space-between;
+  margin-top: 5rem;
+  .h_works_box {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    width: 31%;
+    position: relative;
+    overflow: hidden;
+    background-color: $cmn-white;
+    &:hover {
+      background-color: $secondary;
+      .o_hw_number {
+        h2 {
+          color: $cmn-white;
+        }
+      }
+      .h2_box_cntnt {
+        .hwb_c_num {
+          h5 {
+            color: $cmn-white;
+          }
+        }
+        .hwb_c_details {
+          width: 83%;
+          h5 {
+            color: $cmn-white;
+          }
+          p {
+            color: $cmn-white;
+          }
+        }
+        .hw_btn {
+          a {
+            color: $cmn-white;
+            &::after {
+              border-color: $cmn-white;
+            }
+          }
+        }
+      }
+    }
+
+    .o_hw_number {
+      transform: translateY(-8.5rem) translateX(-3.5rem);
+      h2 {
+        font-size: 15rem;
+        font-weight: 700;
+        color: $primary;
+      }
+    }
+    .h2_box_cntnt {
+      @include flex;
+      justify-content: space-between;
+      padding: 0 5rem;
+      align-items: start;
+      margin-top: -5rem;
+      padding-bottom: 5rem;
+      .hwb_c_num {
+        width: 13%;
+        h5 {
+          font-size: 18px;
+          font-weight: 700;
+          color: $primary;
+        }
+      }
+      .hwb_c_details {
+        width: 83%;
+        h5 {
+          font-size: 18px;
+          font-weight: 700;
+          color: $primary;
+          margin-bottom: 3rem;
+        }
+        p {
+          line-height: 2.5;
+          font-weight: 500;
+        }
+      }
+      .hw_btn {
+        margin-top: 2rem;
+        a {
+          font-size: 14px;
+          font-weight: 600;
+          color: $primary;
+          position: relative;
+          &::after {
+            position: absolute;
+            content: "";
+            bottom: -10px;
+            left: 0;
+            width: 100%;
+            border-bottom: 2px solid $primary;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,64 @@
+.appartment {
+  background-color: #f6f5f4;
+  .parent_appartment {
+    @include flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    .appartment_box {
+      background-color: $cmn-white;
+      box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+      width: 32%;
+      margin-top: 3rem;
+      .appartment-img {
+        width: 100%;
+      }
+      .ap_box_cntnt {
+        padding: 2rem;
+        h6 {
+          color: $primary;
+          font-size: 15px;
+          padding-bottom: 2rem;
+        }
+      }
+      .ap_box_fter {
+        img {
+          padding: 0 1.5rem;
+        }
+        span {
+          font-size: 15px;
+        }
+      }
+    }
+    .ap_box_details {
+      @include flex;
+      justify-content: space-between;
+      .ap_box_rent {
+        h5 {
+          color: $secondary;
+          font-size: 18px;
+        }
+      }
+    }
+  }
+  .appartment_buttons {
+    @include flex;
+    justify-content: flex-start;
+    gap: 5rem;
+    margin-top: 5rem;
+    height: 7rem;
+    .bnr_search {
+      width: 35%;
+      margin-top: 0;
+    }
+    .vw_aprtmnt_btn {
+      height: 100%;
+      a {
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 1rem 4rem;
+      }
+    }
+  }
+}
